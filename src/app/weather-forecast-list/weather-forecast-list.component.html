@@ -1,0 +1,7 @@
+   <button (click)=getWeather()>Get Weather </button> 
+   <p><span>City: {{cityDetails.cleanText}} </span></p>
+   <ul>
+    <li *ngFor="let forecast of this.weatherForecasts">
+        <app-weather-forecast [forecast]="forecast"></app-weather-forecast>
+    </li>
+   </ul>
